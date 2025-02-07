@@ -12,6 +12,7 @@
 .header{
     background: #ffc107;
     padding: 50px 80px 0 100px;
+    display: flex;
 
     & a{
         color: #fff;
@@ -19,12 +20,10 @@
 
     & .logo img{
         width: 261px;
-        float: left;
     }
 
     & nav{
         display: flex;
-        float: right;
         margin-top: 20px;
 
         & ul{
@@ -33,9 +32,7 @@
             & li{
                 margin: 0 30px;
                 font-size: 20px;
-
                 
-
                 & a:hover{
                     color: #a5a5a5;
                     transition: 0.2s;
@@ -52,16 +49,15 @@
             padding: 10px 15px;
             margin-top: -10px;
             margin-left: 15px;
-
-            & a:hover{
-                color: #ffc107;
-                transition: 0.2s;
-            }
         }
 
         & .login button:hover{
             background: #fff;
             transition: 0.2s;
+
+            & a{
+                color: #ffc107;
+            };
         }
 
     }
@@ -69,17 +65,17 @@
     & .title{
         clear: both;
         color: #fff;
-        margin-top: 204px;
+        margin-top: 85px;
         
         & h1{
             font-weight: 400;
-            font-size: 64px;
+            font-size: 52px;
             width: 500px;
         }
 
         & p{
             font-weight: 300;
-            font-size: 24px;
+            font-size: 20px;
             width: 790px;
         }
     }
@@ -88,7 +84,7 @@
         margin-top: 55px;
 
         & input{
-            height: 52px;
+            height: 48px;
             width: 550px;
             font-size: 20px;
             padding-left: 20px;
@@ -98,7 +94,7 @@
         }
 
         & button{
-            height: 54px;
+            height: 48px;
             width: 180px;
             background-color: #0670fc;
             border: none;
@@ -110,7 +106,7 @@
 
     & .links{
         margin-top: 30px;
-        font-size: 20px;
+        font-size: 16px;
         color: #fff;
 
         & .btn-link{
@@ -132,19 +128,25 @@
         & .btn-link:hover{
             background: #fff;
             transition: 0.2s;
-        }
 
-        & .fa-brands:hover{
-            color: #ffc107;
-            transition: 0.2s;
+            & .fa-brands{
+                color: #ffc107;
+                transition: 0.2s;
+            }
         }
     }
 
     & .capa{
-        height: auto;
-        position: absolute;
-        right: 0;
-        top: 150;
+        margin: 10px 0 0 0;
+        padding: 0;
+        display: flex;
+
+        & img{
+            width: auto;
+            margin: 0;
+            position: relative;
+            left: 150px;
+        }
     }
 }
 
