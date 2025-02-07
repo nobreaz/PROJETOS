@@ -13,6 +13,10 @@
     background: #ffc107;
     padding: 50px 80px 0 100px;
 
+    & a{
+        color: #fff;
+    }
+
     & .logo img{
         width: 261px;
         float: left;
@@ -21,6 +25,7 @@
     & nav{
         display: flex;
         float: right;
+        margin-top: 20px;
 
         & ul{
             display: flex;
@@ -29,15 +34,117 @@
                 margin: 0 30px;
                 font-size: 20px;
 
-                & a{
-                    color: #fff;
+                
+
+                & a:hover{
+                    color: #a5a5a5;
+                    transition: 0.2s;
                 }
             }
         }
+
+        & .login button{
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 10px 15px;
+            margin-top: -10px;
+            margin-left: 15px;
+
+            & a:hover{
+                color: #ffc107;
+                transition: 0.2s;
+            }
+        }
+
+        & .login button:hover{
+            background: #fff;
+            transition: 0.2s;
+        }
+
     }
-    
+
     & .title{
         clear: both;
+        color: #fff;
+        margin-top: 204px;
+        
+        & h1{
+            font-weight: 400;
+            font-size: 64px;
+            width: 500px;
+        }
+
+        & p{
+            font-weight: 300;
+            font-size: 24px;
+            width: 790px;
+        }
+    }
+
+    & .form{
+        margin-top: 55px;
+
+        & input{
+            height: 52px;
+            width: 550px;
+            font-size: 20px;
+            padding-left: 20px;
+            border: 1px solid #ababab;
+            border-radius: 10px 0 0 10px;
+            margin-right: -5px
+        }
+
+        & button{
+            height: 54px;
+            width: 180px;
+            background-color: #0670fc;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+
+    & .links{
+        margin-top: 30px;
+        font-size: 20px;
+        color: #fff;
+
+        & .btn-link{
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid #fff;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 5px;
+
+            & .fa-brands{
+                font-size: 20px;
+            }
+        }
+
+        & .btn-link:hover{
+            background: #fff;
+            transition: 0.2s;
+        }
+
+        & .fa-brands:hover{
+            color: #ffc107;
+            transition: 0.2s;
+        }
+    }
+
+    & .capa{
+        height: auto;
+        position: absolute;
+        right: 0;
+        top: 150;
     }
 }
 
