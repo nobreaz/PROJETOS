@@ -1,0 +1,52 @@
+/******************** MOBILE ***************/
+@media (width <= 400px){
+    .header{
+        padding: 1.2em;
+
+        & .direita{
+            display: none;
+        }
+        & .logo img{
+            width: 10em;
+        }
+
+        & .title{
+            margin-top: 3em;
+            
+            & h1{
+                font-size: 2.5em;
+                text-align: center;
+                width: 50vh;
+            }
+
+            & p{
+                margin-top: 1em;
+                font-size: 1em;
+                width: 50vh;
+            }
+        }
+
+        & .form{
+            margin-top: 2em;
+            background-color: #fdde7f;
+            padding: 0.5em;
+            border-radius: 10px;
+
+            & input{
+                width: 33vh;
+                height: 2em;
+                font-size: 1em;
+                display: inline;
+            }
+
+            & button{
+                font-size: 0.8em;
+                width: 15vh;
+                height: 2.5em;
+                position: relative;
+                left: 33vh;
+                bottom: 2.6em;
+            }
+        }
+    }
+}
